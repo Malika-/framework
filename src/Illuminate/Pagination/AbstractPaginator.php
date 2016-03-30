@@ -417,6 +417,17 @@ abstract class AbstractPaginator
     {
         return $this->items;
     }
+    
+    /**
+	 * Set the paginator's collection being paginated.
+	 *
+	 * @param  mixed  $items
+	 * @return void
+	 */
+	public function setCollection($items)
+	{
+		$this->items = $items;
+	}
 
     /**
      * Determine if the given item exists.
